@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Toán</title>
+</head>
+<body>
+<h1>Calulator</h1>
+<input type="number" id="so1">
+<input type="number" id="so2">
+<br/><br/>
+<button value="+" onclick="tinh(this.value)">+</button>
+<button value="-" onclick="tinh(this.value)">-</button>
+<button value="x" onclick="tinh(this.value)">x</button>
+<button value="/" onclick="tinh(this.value)">/</button>
+<br/><br/>
+ket qua la: <p id="t2"></p>
+<script>
+    function tinh(value) {
+        let so1=document.getElementById("so1").value;
+        let so2=document.getElementById("so2").value;
+        let s1=parseFloat(so1);
+        let s2=parseFloat(so2);
+        let t;
+        if ( value === "+") {
+            t=s1+s2;
+        }
+        if (value === "-"){
+            t=s1-s2;
+        }
+        if (value === "x"){
+            t=s1*s2;
+        }
+        if (value === "/") {
+            t=s1/s2; }
+            document.getElementById("t2").innerHTML=t;
+    }
+</script>
+</body>
+</html>
