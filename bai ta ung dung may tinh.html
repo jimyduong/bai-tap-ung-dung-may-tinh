@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh toan</title>
+</head>
+<body>
+
+Caculator
+<br/><br/>
+<input type="number" id="sothu1">
+<input type="number" id="sothu2">
+<br/><br/>
+<button onclick="cong()">+</button>
+<button onclick="tru()">-</button>
+<button onclick="nhan()">x</button>
+<button onclick="chia()">/</button>
+<p id="tinhtoan"></p>
+<script>
+
+
+    function cong() {
+
+        let sothu1 = document.getElementById("sothu1").value;
+        let sothu2 = document.getElementById("sothu2").value;
+        let s1 = parseFloat(sothu1);
+        let s2 = parseFloat(sothu2);
+        let c = s1 + s2;
+        document.getElementById("tinhtoan").innerHTML = c;
+    }
+
+    function tru() {
+        let sothu1 = document.getElementById("sothu1").value;
+        let sothu2 = document.getElementById("sothu2").value;
+        let s1 = parseFloat(sothu1);
+        let s2 = parseFloat(sothu2);
+        let c = s1 - s2;
+        document.getElementById("tinhtoan").innerHTML = c;
+    }
+
+    function nhan() {
+        let sothu1 = document.getElementById("sothu1").value;
+        let sothu2 = document.getElementById("sothu2").value;
+        let s1 = parseFloat(sothu1);
+        let s2 = parseFloat(sothu2);
+        let c = s1*s2;
+        document.getElementById("tinhtoan").innerHTML = c;
+    }
+
+    function chia() {
+        let sothu1 = document.getElementById("sothu1").value;
+        let sothu2 = document.getElementById("sothu2").value;
+        let s1 = parseFloat(sothu1);
+        let s2 = parseFloat(sothu2);
+        let c = s1/s2;
+        document.getElementById("tinhtoan").innerHTML = c;
+    }
+</script>
+</body>
+</html>
