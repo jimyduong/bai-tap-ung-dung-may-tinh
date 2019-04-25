@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May Tinh</title>
+</head>
+<body>
+<input type="text" id="output">
+<br>
+<button value="1" onclick="show(this.value)">1</button>
+<button value="2" onclick="show(this.value)">2</button>
+<button value="3" onclick="show(this.value)">3</button>
+<button value="+" onclick="show(this.value)">+</button>
+<br>
+<button Value="4" onclick="show(this.value)">4</button>
+<button Value="5" onclick="show(this.value)">5</button>
+<button Value="6" onclick="show(this.value)">6</button>
+<button Value="-" onclick="show(this.value)">-</button>
+<br>
+<button Value="7" onclick="show(this.value)">7</button>
+<button Value="8" onclick="show(this.value)">8</button>
+<button Value="9" onclick="show(this.value)">9</button>
+<button Value="*" onclick="show(this.value)">x</button>
+<br>
+<button Value="0" onclick="show(this.value)">0</button>
+<button  onclick="ClearOut()">C</button>
+<button  onclick="Tinh()">=</button>
+<button Value="/" onclick="show(this.value)">/</button>
+
+<script>
+    function show(value) {
+        document.getElementById("output").value += value;
+    }
+
+    function Tinh() {
+        let a = document.getElementById("output").value;
+        A = eval(a);
+        document.getElementById("output").value = A;
+
+    }
+
+    function ClearOut() {
+        document.getElementById("output").value = "";
+
+    }
+
+</script>
+
+
+</body>
+</html>
