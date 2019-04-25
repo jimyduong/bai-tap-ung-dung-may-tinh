@@ -26,6 +26,7 @@
 <button  onclick="ClearOut()">C</button>
 <button  onclick="Tinh()">=</button>
 <button Value="/" onclick="show(this.value)">/</button>
+<button Value="Del" onclick="DEL()">DEL</button>
 
 <script>
     function show(value) {
@@ -42,6 +43,11 @@
     function ClearOut() {
         document.getElementById("output").value = "";
 
+    }
+    function DEL() {
+        d = document.getElementById("output").value;
+        D=d.substr(0,d.length -1);
+        document.getElementById("output").value = D;
     }
 
 </script>
